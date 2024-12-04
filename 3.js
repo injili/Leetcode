@@ -68,5 +68,12 @@ class Solution {
   // Function to reverse the array.
   reverseArray(arr) {
     // your code here
+    if (arr) {
+      let a = arr.length;
+      for (let i = 0; i <= a; i++) {
+        [arr[a], arr[i]] = [arr[i], arr[a]];
+        a--;
+      }
+    }
   }
 }
